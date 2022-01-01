@@ -1,0 +1,22 @@
+package DP;
+
+public class Solution_338_counting_bits {
+    public static int[] countBits(int n) {
+        int result[] = new int[n+1];
+        result[0] = 0;
+        if(n>=1){
+            result[1] = 1;
+        }
+        if(n>=2){
+            result[2] = 1;
+        }
+        for(int i = 3; i < n+1; i++){
+            if(i%2==0){
+                result[i] = result[i/2];
+            }else{
+                result[i]=(result[i-1]+1);
+            }
+        }
+        return result;
+    }
+}
