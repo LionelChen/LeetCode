@@ -8,6 +8,7 @@ import static Array.Solution_153_find_min_in_rotated_sorted_array.findMin;
 import static Array.Solution_162_find_peak_element.findPeakElement;
 import static Array.Solution_74_search_matrix.searchMatrix;
 import static LinkedList.Solution_82_remove_duplicates_from_sorted_list_ii.deleteDuplicates;
+import static double_pointer.Solution_209_minimum_size_subarray_sum.minSubArrayLen;
 import static double_pointer.Solution_713_subarray_product_less_than_k.numSubarrayProductLessThanK;
 import static double_pointer.Solution_844_backspace_string_compare.backspaceCompare;
 import static double_pointer.Solution_986_interval_list_intersections.intervalIntersection;
@@ -29,6 +30,7 @@ public class Main {
         int[][] firstList = {{0,2},{5,10},{13,23},{24,25}};
         int[][] secondList = {{1, 5},{8, 12},{ 15, 24 },{ 25, 26 }};
         int[] nums6 = {1,1,1};
+        int[] nums7 = {1,2,3,4,5};
         ListNode node6 = new ListNode(5);
         ListNode node5 = new ListNode(4, node6);
         ListNode node4 = new ListNode(4, node5);
@@ -53,7 +55,8 @@ public class Main {
         }*/
         //System.out.println(backspaceCompare("xywrrmp","xywrrmu#p"));
         //System.out.println(Arrays.deepToString(intervalIntersection(firstList, secondList)));
-        System.out.println(numSubarrayProductLessThanK(nums6, 1));
+        //System.out.println(numSubarrayProductLessThanK(nums6, 1));
+        System.out.println(minSubArrayLen(11, nums7));
 
     }
 
