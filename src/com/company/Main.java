@@ -1,7 +1,5 @@
 package com.company;
 
-import java.util.Arrays;
-
 //import static Array.Solution_33_search_in_rotated_sorted_array.search;
 //import static Array.Solution_34_find_first_and_last_pos_of_elm_in_sorted_array.searchRange;
 //import static Array.Solution_153_find_min_in_rotated_sorted_array.findMin;
@@ -33,7 +31,21 @@ import java.util.Arrays;
 //import DP.Solution_45_jump_game_II;
 //import DP.Solution_53_max_subarray;
 //import DP.Solution_918_max_sum_in_circular_subarray;
-import DP.Solution_152_max_product_subarray;
+//import DP.Solution_152_max_product_subarray;
+//import BinarySearch.Solution_Offer53_II_locate_missing_number_in_sorted;
+//import BinarySearch.Solution_Offer04_locate_in_2d_array;
+//import BinarySearch.Solution_Offer_11_located_min_in_rotated_sorted_array;
+//import BFSnDFS.Solution_BFS_output_by_level;
+//import BFSnDFS.Solution_BFS_output_by_level.TreeNode;
+//import Array.Solution_1601_max_number_of_achievable_transfer_requests;
+//import DP.Solution_1014_best_sightseeing_pair;
+//import DP.Solution_139_word_break;
+//import hard.Solution_564_find_the_closest_palindrome;
+
+import Array.Solution_146_LRU_Cache;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
 
@@ -61,7 +73,7 @@ public class Main {
         int[] nums8 = {1,7,9,2};
         int[] nums9 = {1,2,2};
         int[][] nums10 = {{0,1},{1,0}};
-
+        int[][] nums2d = {{1,4,7,11,15},{2,5,8, 12, 19}, {3,   6,  9, 16, 22}, {10, 13, 14, 17, 24}, {18, 21, 23, 26, 30}};
 	    //System.out.println(Arrays.toString(countBits(5)));
         //System.out.println(canJump(nums));
         //System.out.println(jump(nums));
@@ -112,8 +124,44 @@ public class Main {
         //System.out.println(s.maxSubArray(new int[]{-2,1,-3,4,-1,2,1,-5,4}));
         //Solution_918_max_sum_in_circular_subarray s = new Solution_918_max_sum_in_circular_subarray();
         //System.out.println(s.maxSubarraySumCircular(new int[]{-3,-2,-3}));
-        Solution_152_max_product_subarray s = new Solution_152_max_product_subarray();
-        System.out.println(s.maxProduct(new int[]{-2,0,-1}));
+        //Solution_152_max_product_subarray s = new Solution_152_max_product_subarray();
+        //System.out.println(s.maxProduct(new int[]{-2,0,-1}));
+        //Solution_Offer53_II_locate_missing_number_in_sorted s = new Solution_Offer53_II_locate_missing_number_in_sorted();
+        //System.out.println(s.missingNumber(new int[]{0,1,3}));
+        //Solution_Offer04_locate_in_2d_array s = new Solution_Offer04_locate_in_2d_array();
+        //System.out.println(s.findNumberIn2DArray(nums2d, 5));
+        //Solution_Offer_11_located_min_in_rotated_sorted_array s = new Solution_Offer_11_located_min_in_rotated_sorted_array();
+        //System.out.println(s.minArray(new int[]{1,3,5}));
+/*        TreeNode a = new TreeNode(15);
+        TreeNode b = new TreeNode(7);
+        TreeNode c = new TreeNode(20);
+        c.left = a;
+        c.right = b;
+        TreeNode d = new TreeNode(9);
+        TreeNode f = new TreeNode(3);
+        f.left = d;
+        f.right = c;*/
+        //Solution_BFS_output_by_level s = new Solution_BFS_output_by_level();
+        //System.out.println(s.levelOrder(f));
+        //Solution_1601_max_number_of_achievable_transfer_requests s = new Solution_1601_max_number_of_achievable_transfer_requests();
+        //System.out.println(s.maximumRequests(5, new int[][]{{0,1},{1,0},{0,1},{1,2},{2,0},{3,4}}));
+        //Solution_1014_best_sightseeing_pair s = new Solution_1014_best_sightseeing_pair();
+        //System.out.println(s.maxScoreSightseeingPair(new int[]{8,1,5,2,6}));
+        //Solution_564_find_the_closest_palindrome s = new Solution_564_find_the_closest_palindrome();
+        //System.out.println(s.nearestPalindromic("123"));
+        //Solution_139_word_break s = new Solution_139_word_break();
+        //ArrayList<String> dict = new ArrayList<String>();
+        //dict.add("leet");
+        //dict.add("code");
+        //System.out.println(s.wordBreak("leetcode",dict ));
+        Solution_146_LRU_Cache obj = new Solution_146_LRU_Cache(2);
+        obj.put(1,0);
+        obj.put(2,2);
+        System.out.println(obj.get(1));
+        obj.put(3,3);
+        System.out.println(obj.get(2));
+        obj.put(4,4);
+        System.out.println(obj.get(1));
     }
 
 }

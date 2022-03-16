@@ -9,7 +9,7 @@ public class Solution_Offer53_II_locate_missing_number_in_sorted {
             if(nums[mid]==mid){
                 low = mid+1;
             }else{
-                high = mid-1;
+                high = mid;
             }
         }
         return low;
